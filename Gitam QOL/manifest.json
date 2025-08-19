@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Gitam QOL",
+  "version": "1.0",
+  "description": "Auto-fills captcha on GITAM login page.",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://login.gitam.edu/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
